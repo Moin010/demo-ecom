@@ -1,0 +1,38 @@
+{{ 'demo-rich-text.css' | asset_url | stylesheet_tag }}
+
+<div class="demo-rich-text">
+  <div class="page-wrap">
+    <div class="content-wrap">
+      <div class="header-area">
+        <h2>
+          Summer Essentials Collection
+        </h2>
+      </div>
+
+      <div class="text-area">
+        Summer Essentials CollectionSummer Essentials CollectionSummer Essentials CollectionSummer Essentials CollectionSummer Essentials CollectionSummer Essentials CollectionSummer Essentials CollectionSummer Essentials CollectionSummer Essentials CollectionSummer Essentials Collection
+      </div>
+
+      <div class="btn-area">
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Demo Rich Text",
+    "presets": [
+      {
+        "category": "Text",
+        "name": "Demo Rich Text"
+
+      }
+    ],
+    "disabled_on": {
+      "groups": ["header", "aside", "footer"]
+    }
+  }
+{% endschema %}

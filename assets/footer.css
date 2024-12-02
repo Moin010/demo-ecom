@@ -1,0 +1,133 @@
+#footer-social-signup-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px auto;
+  position: relative;
+}
+#footer-social-signup-form::before,
+#footer-social-signup-form::after {
+  content: '';
+  margin: 0 auto;
+  width: 80%;
+  height: 1px;
+  background: var(--black3);
+  position: absolute;
+  bottom: -30px;
+  left: 10%;
+  z-index: 10;
+}
+#footer-social-signup-form::before {
+  top: -30px;
+}
+#social-button-area {
+  display: flex;
+  gap: 29px;
+  margin-left: 80px;
+}
+.signup-form-area {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.signup-form-area h4 {
+  font-size: 15px;
+}
+.signup-form-area form .footer-signup-form {
+  width: 280px;
+  height: 30px;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+.signup-form-area form .footer-signup-form::placeholder {
+  color: var(--whitec4);
+}
+/* horizontal-line-after-footer-form */
+#horizontal-line-after-footer-form hr {
+  margin: 50px auto;
+  width: 82vw;
+  margin-bottom: 80px;
+}
+
+.footer-link-area {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-link-area ul li {
+  list-style: none;
+  margin-top: 2px;
+}
+.footer-link-area ul li:first-child {
+  margin-top: 15px;
+}
+.footer-link-area ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--black7);
+}
+.footer-link-area h5 {
+  font-size: 10px;
+  color: var(--black1);
+}
+.footer-link-area h6 {
+  font-size: 14px;
+  color: var(--black7);
+}
+.footer-link-area p {
+  font-size: 13px;
+  color: var(--black7);
+}
+.footer-link-col-2 ul li {
+  margin-top: 5px;
+}
+
+/* footer copyright */
+
+.footer-copyright-area p {
+  margin: 60px auto;
+  text-align: center;
+  font-size: 11px;
+  margin-top: 80px;
+  color: var(--black7);
+}
+.footer-copyright-area p span {
+  font-size: 10px;
+  color: var(--black3);
+  font-weight: 600;
+}
+@media screen and (max-width: 1093px) {
+  #footer-social-signup-form {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 785px) {
+  /* footer */
+
+  div#social-button-area {
+    margin: auto;
+  }
+  .signup-form-area h4 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-link-area.container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* newsletter banner */
+  #newsletter-banner a {
+    text-align: center;
+    padding: 10px;
+  }
+  .signup-form-area form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
