@@ -1,0 +1,62 @@
+#dummy {
+  height: 100vh;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black0);
+}
+/* variables */
+:root {
+  --black0: #000000;
+  --black1: #111111;
+  --black3: #333333;
+  --black7: #777777;
+  --whiteF: #ffffff;
+  --whitec4: #c4c4c4;
+  --whiteef: #efefef;
+  --whiteec: #ececec;
+  --whitee7: #e7e7e7;
+}
+
+/* utilitis */
+.text-white {
+  color: var(--whiteF);
+}
+/* buttons */
+.btn {
+  background-color: var(--black0);
+  height: 50px;
+  width: 152px;
+  color: var(--whiteF);
+  cursor: pointer;
+}
+a.btn {
+  padding: 14px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.btn-sm {
+  height: 30px;
+  width: 97 px;
+}
+.btn-lg {
+  width: 204px;
+}
+.btn-xl {
+  width: 324px;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
