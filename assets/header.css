@@ -62,6 +62,12 @@
   margin-top: 5px;
 }
 
+#icon-nav ul li:last-of-type {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+}
+
 /* page when scrolled 
     ======================
     ======================
