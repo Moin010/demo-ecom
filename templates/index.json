@@ -31,10 +31,10 @@
     "demo_rich_text_yGiYF6": {
       "type": "demo-rich-text",
       "settings": {
-        "heading": "",
-        "discription": "",
-        "button_text": "",
-        "button_url": ""
+        "heading": "Hello there",
+        "discription": "asdasd asdasd asdasd asdasdas asdasd",
+        "button_text": "Click here",
+        "button_url": "#"
       }
     }
   },
