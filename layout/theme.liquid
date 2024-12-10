@@ -1,3 +1,4 @@
+{% include 'shogun-content-handler' %}
 <!doctype html>
 <html>
   <head>
@@ -36,7 +37,9 @@
     {{ 'style.css' | asset_url | stylesheet_tag }}
     <title>RichApparel</title>
     {{ content_for_header }}
-  </head>
+  
+  {% render 'shogun-head' %}
+</head>
 
   <body>
     {% comment %} HEADER START {% endcomment %}
