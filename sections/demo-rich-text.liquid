@@ -4,13 +4,13 @@
   <div class="container">
     <div class="collection-heading-button">
       {% if section.settings.heading %}
-        <h2>{{section.settings.heading}}</h2>
+        <h2>{{ section.settings.heading }}</h2>
       {% endif %}
       {% if section.settings.discription %}
-        <p>{{section.settings.discription}}</p>
+        <p>{{ section.settings.discription }}</p>
       {% endif %}
       {% if section.settings.button_text or section.settings.button_url %}
-        <a href="{{section.settings.button_url}}" class="btn">{{section.settings.button_text}}</a>
+        <a href="{{section.settings.button_url}}" class="btn">{{ section.settings.button_text }}</a>
       {% endif %}
     </div>
   </div>
@@ -43,7 +43,7 @@
         "id": "discription",
         "label": "Discription"
       },
-      
+
       {
         "type": "header",
         "content": "Button"
@@ -57,7 +57,7 @@
         "type": "url",
         "id": "button_url",
         "label": "Button URL"
-      },
-    ],
+      }
+    ]
   }
 {% endschema %}
