@@ -1,0 +1,28 @@
+.image-carousel-1 {
+  padding: 0 60px;
+}
+.image-carousel {
+  margin: 0 5px;
+  height: 315px !important;
+  width: 315px !important;
+  overflow: hidden;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.image-carousel img {
+  height: 150%;
+}
+.image-carousel-arrow {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  cursor: pointer;
+}
+
+.left-arrow-black {
+  left: 10px;
+}
+.right-arrow-black {
+  right: 10px;
+}

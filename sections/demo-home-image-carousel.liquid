@@ -1,0 +1,43 @@
+{{ 'demo-home-image-carousel.css' | asset_url | stylesheet_tag }}
+
+<section id="home-image-carousel">
+  <div class="container">
+    <div class="image-carousel-1">
+      {% for block in section.blocks %}
+        <div class="image-carousel">
+          <img
+            src="{{ block.settings.image |  image_url}}"
+            alt=""
+            height=""
+            width=""
+          >
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Demo Home Image Carousel",
+  "presets": [
+    {
+      "name": "Demo Home Image Carousel"
+    }
+  ],
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Carousel Image",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
