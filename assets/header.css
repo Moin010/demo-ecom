@@ -84,6 +84,7 @@
   z-index: 1000;
   background-color: var(--whiteF);
   width: 100%;
+  left: 0;
 }
 
 .hero-slider-area.page-scrolled {
