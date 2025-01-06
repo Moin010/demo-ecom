@@ -17,9 +17,53 @@
         "button_text": "Click here",
         "button_url": "#"
       }
+    },
+    "demo_home_image_carousel_aGwrrF": {
+      "type": "demo-home-image-carousel",
+      "blocks": {
+        "slide_7XBn7M": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/product16_133368b8-9c1e-4da1-8a0b-ad994261ff96.jpg"
+          }
+        },
+        "slide_3YbNpn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/home-display-img-4_aa704750-a6f8-469d-a1c0-21fe3cfd11cf.jpg"
+          }
+        },
+        "slide_QrHNEC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/product5_8c0dbe88-7570-4f42-a825-bd8a4899caa7.jpg"
+          }
+        },
+        "slide_GcNbxp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/product23_a8450081-d4f1-42d7-a51e-e9d23cec2b1b.jpg"
+          }
+        },
+        "slide_AbnQaP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/product18_409a6439-fb3c-4d91-8dee-9dd9fc6a793f.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_7XBn7M",
+        "slide_3YbNpn",
+        "slide_QrHNEC",
+        "slide_GcNbxp",
+        "slide_AbnQaP"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "demo_rich_text_yGiYF6"
+    "demo_rich_text_yGiYF6",
+    "demo_home_image_carousel_aGwrrF"
   ]
 }
