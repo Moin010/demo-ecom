@@ -1,22 +1,50 @@
 {{ 'demo-home-offer-and-signup.css' | asset_url | stylesheet_tag }}
 
-<section id="home-offer-and-signup-area">
+<section
+  id="home-offer-and-signup-area"
+  style="background-image: url({{ section.settings.bgImg | image_url }});"
+>
   <div class="container">
     <div id="home-offer-and-signup">
-      <h2>Sign up for 15% off your first order</h2>
-      <a href="#" class="btn">Sign Up Now</a>
+      <h2>{{ section.settings.heading }}</h2>
+      <a href="{{ section.settings.button_url}}" class="btn">{{ section.settings.btnText }}</a>
     </div>
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Demo Home Offer And Signup",
+  "name": "Demo Home Offer Signup",
   "presets": [
     {
       "name": "Demo Home Offer And Signup"
     }
   ],
-  "settings": []
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "btnText",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "header",
+      "content": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bgImg",
+      "label": "Background Image"
+    }
+  ]
 }
 {% endschema %}
