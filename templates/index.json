@@ -60,10 +60,20 @@
         "slide_AbnQaP"
       ],
       "settings": {}
+    },
+    "demo_home_offer_and_signup_Mq9KAf": {
+      "type": "demo-home-offer-and-signup",
+      "settings": {
+        "heading": "Sign up for 15% off your first order",
+        "btnText": "Sign Up Now",
+        "button_url": "#",
+        "bgImg": "shopify://shop_images/home-signup-offer_30145736-b2f9-40a9-a617-6bf38eba1918.jpg"
+      }
     }
   },
   "order": [
     "demo_rich_text_yGiYF6",
-    "demo_home_image_carousel_aGwrrF"
+    "demo_home_image_carousel_aGwrrF",
+    "demo_home_offer_and_signup_Mq9KAf"
   ]
 }
