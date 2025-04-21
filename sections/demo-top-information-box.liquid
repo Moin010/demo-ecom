@@ -1,0 +1,151 @@
+{{ '' | asset_url | stylesheet_tag }}
+
+<style>
+  .page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 1.6rem;
+  }
+  .top-info-box {
+    max-width: 894px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dedede;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .info-box-text-area {
+    margin: 38px 0px;
+    margin-left: 32px;
+    margin-right: 192px;
+  }
+  .info-box-text-area p {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+
+  .info-box-img {
+    height: 181px;
+    width: 181px;
+    overflow: hidden;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    margin-right: -29px;
+    z-index: 2;
+  }
+  .info-box-img img {
+    width: 85%;
+    height: 120%;
+  }
+
+  .info-box-img-bg {
+    max-width: 157px;
+    height: 2815px;
+    position: absolute;
+    right: 0px;
+    margin-top: -2px;
+    z-index: 1;
+  }
+  .info-box-img-mobile-bg {
+    display: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .top-info-box {
+      width: 100%;
+      min-height: 137px;
+    }
+    .info-box-text-area {
+      margin: 16px 0px;
+      margin-left: 16px;
+      margin-right: 95px;
+    }
+    .info-box-img {
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      top: unset;
+      transform: translateY(0%);
+      margin-right: -40px;
+      margin-bottom: -14px;
+      bottom: 0px;
+    }
+    .info-box-text-area p {
+      font-family: Satoshi;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0px;
+    }
+    .info-box-img-bg {
+      display: none;
+    }
+
+    .info-box-img-mobile-bg {
+      display: block;
+      z-index: 1;
+      height: 116px;
+      width: 96px;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+  }
+</style>
+
+<div class="page-width">
+  <div class="top-info-box ">
+    <div class="info-box-text-area">
+      <p>Hier ist eine Übersicht unserer Styles. Du kannst dich nicht entscheiden?</p>
+      <p>Wir beraten dich gerne persönlich unter support@girlgotlashes.de</p>
+    </div>
+    <div class="info-box-img">
+      <img
+        src="https://s3-alpha-sig.figma.com/img/baa8/33df/f01ddb65cea86f202ea782b599aedc95?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JGRz-oXQDGXXOdMR1b8wSbJdr-6ZkKd556xJVlMVNqp55IazW~BnFpJTnh03uvEUV3uEc4W7iwjUxTd9FB~qAsbuPwwscM3mkBqp47Qr3yrCiHeK3tPqLX8IFkZjp1OnIeZY9o1nDqpWUKLA37cVAZrTd8fbevQ2iWniEpZ~b~zhrbeO0wxhtysrABh9WlptWxeicTUVS0LZ7WECcutHuBmUuCZXhpw6RrQwRMY7IcybNrpbgSf6x3jIg31auhrPL8BBcDg~vpP9uiaNuzQG6kSoWFDVZKVhKO4Mh9JBiN5w8RC-qqKjGUfzPDsnkDASSGEqlzJYpmjMKSBATkbekA__"
+        alt=""
+        width=""
+        height=""
+      >
+    </div>
+    <div class="info-box-img-bg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="100%" viewBox="0 0 155 132" fill="none">
+        <ellipse cx="96.5" cy="66.5" rx="96.5" ry="90.5" fill="#FFC3D3"/>
+      </svg>
+    </div>
+    <div class="info-box-img-mobile-bg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="100%" viewBox="0 0 95 116" fill="none">
+        <ellipse cx="69.5" cy="65" rx="69.5" ry="65" fill="#FFC3D3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Top Information Box",
+  "presets": [
+    {
+      "name": "Top Information Box"
+    }
+  ],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "topInfoBoxImg",
+      "label": "Top Info Box Image"
+    }
+  ]
+}
+{% endschema %}
